@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "roboto_regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "roboto_medium";
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: "roboto_Ligh";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "roboto_extralight";
+    src: url(../fonts/Roboto-ExtraLight.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1 {
+    font-family: "roboto_regular";
+    overflow-wrap: break-word;
+    height: 36px;
+}
+
+h2 {
+    font-family: "roboto_regular";
+    overflow-wrap: break-word;
+    height: 24px;
+}
+
+h3 {
+    font-family: "roboto_Ligh";
+    overflow-wrap: break-word;
+    height: 20px;
+}
+
+p {
+    font-family: "roboto_Ligh";
+    overflow-wrap: break-word;
+    height: 16px;
+}
+
+.footer_p {
+    font-family: "roboto_extralight";
+    overflow-wrap: break-word;
+    height: 12px;
+}
