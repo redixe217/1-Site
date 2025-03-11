@@ -1,0 +1,10 @@
+@media (width <= 800px) { 
+
+
+    .index_img {
+    background-image: url("/Images/photos/H/7_foraersblomster_Martin_Kleisberg.webp");
+    height: 100%; width: 100%;
+    overflow: auto;
+    position: fixed;
+}
+}
