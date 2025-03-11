@@ -54,8 +54,42 @@ p {
     height: 16px;
 }
 
+.header_menu {
+    height: 160px;
+    width: 100%;
+    background-color: #518F59;
+}
+
+.logo_img {
+    height: 100px;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer_box {
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    background-color: #518F59;
+}
+
+
 .footer_p {
     font-family: "roboto_extralight";
     overflow-wrap: break-word;
     height: 12px;
+    text-align: center;
+    margin-top: 20px;
 }
