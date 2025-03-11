@@ -60,6 +60,20 @@ p {
     background-color: #518F59;
 }
 
+.header_menu_li {
+    font-family: "roboto_Ligh";
+    color: #000;
+}
+
+.header_menu_li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.header_menu_li a:hover {
+    color: #000;
+}
+
 .logo_img {
     height: 100px;
     width: auto;
