@@ -54,29 +54,39 @@ p {
     font-size: 16px;
 }
 
-.header_menu {
-    height: 160px;
-    width: 100%;
-    background-color: #518F59;
-}
-
-.header_menu_li {
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-family: "roboto_Ligh";
     color: #000;
+    height: 110px;
+    width: 100%;
+    background-color: #518F59;
+    font-size: 16px;
+    padding: 0 20px;
 }
 
-.header_menu_li a {
-    color: #000;
-    text-decoration: none;
-}
-
-.header_menu_li a:hover {
-    color: #000;
-}
+.header_menu {
+    display: flex;
+    gap: 20px;
+} 
 
 .logo_img {
     height: 100px;
     width: auto;
+}
+
+.nav_a {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 8px 2px 8px;
+    float: right;
+    margin-right: 20px;
+}
+
+.nav_a:hover {
+    border-bottom: solid #000 1px;
 }
 
 .index_div  {
