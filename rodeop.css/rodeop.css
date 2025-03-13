@@ -1,3 +1,59 @@
+@font-face {
+    font-family: "roboto_regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "roboto_medium";
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: "roboto_Ligh";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "roboto_extralight";
+    src: url(../fonts/Roboto-ExtraLight.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    font-family: "roboto_regular";
+    overflow-wrap: break-word;
+    font-size: 60px;
+}
+
+h2 {
+    font-family: "roboto_regular";
+    overflow-wrap: break-word;
+    font-size: 24px;
+}
+
+h3 {
+    font-family: "roboto_Ligh";
+    overflow-wrap: break-word;
+    font-size: 20px;
+}
+
+p {
+    font-family: "roboto_Ligh";
+    overflow-wrap: break-word;
+    font-size: 16px;
+}
+
 header {
     height: 110px;
     width: 100%;
@@ -27,7 +83,10 @@ header {
     color: #000;
     float: right;
     text-decoration: none;
-    border-bottom: solid #518F59 1px;
+}
+
+.nav_a:hover {
+    border-bottom: solid #000 1px;
 }
 
 .index_div {
@@ -85,7 +144,7 @@ header {
 .top_section_text {
     height: 80px;
     width: 100%;
-    top: 50%;
+    top: 22%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -98,66 +157,32 @@ header {
 
 
 
-.info_menu {
-    /* width: 1200px; */
-    display: grid;
-    padding-top: 4em;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, auto);
-    justify-items: center;
-    gap: 2em;
-}
+.media {
+    position: relative; /* Gør det muligt at positionere overlayen i forhold til billedet */
+    display: inline-block; /* Eller block – alt efter din layout */
+  }
+  
+  /* Billedet – gør det responsivt */
+  .img_info_l,
+  .img_info_r {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Overlay-boksen */
+  .info_div_ul {
+    position: absolute;
+    bottom: 0;      /* Starter ved bunden af .media */
+    left: 0;
+    right: 0;
+    transform: translateY(50%);  /* Flytter overlayen ned, så halvdelen ligger over billedet og halvdelen under */
+    background: rgba(255, 255, 255, 0.8);  /* Eksempel: let transparent baggrund */
+    padding: 0.5em;
+    box-sizing: border-box;
+  }
 
-.info_menu img {
-    height: 220px;
-    width: 200px;
-    filter: grayscale(20%);
-}
-
-.info_menu img:hover {
-    filter: grayscale(0%);
-    transform: all 0.8s;
-}
-
-.info_menu a {
-    color: #000;
-    text-align: center;
-    text-decoration: none;
-    font-family: "roboto_Ligh";
-    font-size: 18px;
-    border-bottom: solid #FFF 1px;
-}
-
-.item1 {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.item2 {
-    grid-column: 3;
-    grid-row: 1;
-}
-
-.item3 {
-    grid-column: 4;
-    grid-row: 1;
-}
-
-.item4 {
-    grid-column: -3/2;
-    grid-row: 2;
-}
-
-.item5 {
-    grid-column: -2/3;;
-    grid-row: 2;
-}
-
-.centertest {
-    justify-self: center;
-}
-
-.section_r, .section_l {
+  .section_r, .section_l {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* grid-template-rows: repeat(5, 5fr); */
@@ -177,20 +202,4 @@ header {
 
 .img_info_l {
     grid-row: 2/1;
-}
-
-.footer_box {
-    height: 40px;
-    width: 100%;
-    /* bottom: 0;
-    position: fixed; */
-    background-color: #518F59;
-}
-
-.footer_p {
-    height: 12px;
-    margin-top: 20px;
-    font-family: "roboto_extralight";
-    overflow-wrap: break-word;
-    text-align: center;
 }
