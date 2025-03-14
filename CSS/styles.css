@@ -88,7 +88,7 @@ header {
 }
 
 .top_section_text {
-  height: 80px;
+  height: 60px;
   width: 100%;
   top: 50%;
   left: 50%;
@@ -100,6 +100,13 @@ header {
   backdrop-filter: blur(6px) saturate(70%);
   -webkit-backdrop-filter: blur(6px) saturate(70%);
   text-align: center;
+}
+
+.top_style_h,
+h1,
+h3 {
+  display: inline;
+  padding-top: 10px;
 }
 
 .info_menu {

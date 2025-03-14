@@ -16,7 +16,7 @@
   }
 
   .top_section_text {
-    height: 50px;
+    height: 60px;
   }
 
   .top_section_text,
@@ -51,5 +51,15 @@
     position: relative;
     left: 4%;
     padding-top: 4em;
+  }
+}
+
+@media only screen and (max-width: 818px) {
+  .index_video_full {
+    display: none;
+  }
+
+  .index_video_mobil {
+    display: block;
   }
 }
