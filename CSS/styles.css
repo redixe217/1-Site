@@ -280,6 +280,28 @@ h3 {
   grid-row: 2/1;
 }
 
+.plant_section_grund {
+  max-width: 800px;
+  position: relative;
+  left: 30%;
+  padding: 4px;
+}
+
+.border_bottom {
+  border-bottom: #000 2px solid;
+  padding: 4px;
+  width: 900px;
+  position: relative;
+  left: 28%;
+}
+
+.plant_section_grund_with_img {
+  max-width: 800px;
+  position: relative;
+  left: 30%;
+  padding: 4px;
+}
+
 .footer_box {
   height: 40px;
   width: 100%;
