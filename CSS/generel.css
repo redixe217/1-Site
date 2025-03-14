@@ -1,63 +1,102 @@
 @font-face {
-    font-family: "roboto_regular";
-    src: url(../fonts/Roboto-Regular.ttf);
+  font-family: "roboto_regular";
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
-    font-family: "roboto_medium";
-    src: url(../fonts/Roboto-Medium.ttf);
+  font-family: "roboto_medium";
+  src: url(../fonts/Roboto-Medium.ttf);
 }
 
 @font-face {
-    font-family: "roboto_Ligh";
-    src: url(../fonts/Roboto-Light.ttf);
+  font-family: "roboto_Ligh";
+  src: url(../fonts/Roboto-Light.ttf);
 }
 
 @font-face {
-    font-family: "roboto_extralight";
-    src: url(../fonts/Roboto-ExtraLight.ttf);
+  font-family: "roboto_extralight";
+  src: url(../fonts/Roboto-ExtraLight.ttf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 img {
-    height: auto;
-    max-width: 100%;
-    display: block;
+  height: auto;
+  max-width: 100%;
+  display: block;
 }
 
-h1 {
-    font-family: "roboto_regular";
-    overflow-wrap: break-word;
-    font-size: 60px;
-}
-
+h1,
 h2 {
-    font-family: "roboto_regular";
-    overflow-wrap: break-word;
-    font-size: 24px;
+  font-family: "roboto_regular";
+  overflow-wrap: break-word;
 }
 
-h3 {
-    font-family: "roboto_Ligh";
-    overflow-wrap: break-word;
-    font-size: 20px;
-}
-
+h3,
 p {
-    font-family: "roboto_Ligh";
-    overflow-wrap: break-word;
-    font-size: 16px;
+  font-family: "roboto_Ligh";
+  overflow-wrap: break-word;
+}
+
+ul {
+  font-family: "roboto_Ligh";
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a:hover {
-    border-bottom: solid #000 1px;
+  border-bottom: solid #000 1px;
+}
+
+@media (width <= 800px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  ul {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  ul {
+    font-size: 14px;
+  }
 }
