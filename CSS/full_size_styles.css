@@ -1,0 +1,41 @@
+@media (min-width: 1000px) {
+  .section_r,
+  .section_l {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    padding-top: 2em;
+    margin: 0 auto;
+    place-items: center;
+  }
+
+  .text_r p {
+    padding-left: 10px;
+  }
+
+  .text_l,
+  h2 p {
+    padding-right: 10px;
+  }
+
+  .img_info_r {
+    grid-row: 1/2;
+  }
+
+  .text_l {
+    grid-row: 1/2;
+  }
+
+  .info_div_ul {
+    width: 490px;
+    position: relative;
+    top: 6%;
+    columns: 2;
+    padding-top: 16px;
+  }
+
+  .ul_r {
+    position: relative;
+    left: 10px;
+  }
+}

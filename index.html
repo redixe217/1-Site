@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/styles.css" />
     <link rel="stylesheet" href="CSS/generel.css" />
+    <link rel="stylesheet" href="CSS/full_size_styles.css" />
     <link rel="stylesheet" href="CSS/mobile_styles.css" />
     <title>Velkommen til foråret</title>
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="Images/logo.webp" class="logo_img" /></a>
+      <a href="index.html"><img src="images/logo.webp" class="logo_img" /></a>
 
       <nav class="header_menu">
         <a href="index.html" class="nav_a">Forside</a>
@@ -22,33 +23,30 @@
     </header>
     <main>
       <div class="index_div">
-        <!-- <img
-          src="Images/photos/L/7_foraersblomster_Martin_Kleisberg.webp"
-          class="index_img"
-        /> -->
         <video
-          controls
           autoplay
           muted
           loop
+          playsinline
           class="index_video_full video_style"
         >
-          <source src="video/bee_at_the_flower.mp4" type="video/mp4" />
+          <source
+            src="video/bee_at_the_flower.mp4"
+            poster="video/poster"
+            type="video/mp4"
+          />
+          Din browser understøtter ikke videoafspilning.
         </video>
         <video
-          controls
           autoplay
           muted
           loop
+          playsinline
           class="index_video_mobil video_style"
         >
           <source src="video/bee_at_the_flower_mobil.mp4" type="video/mp4" />
+          Din browser understøtter ikke videoafspilning.
         </video>
-
-        <!-- <div class="index_img"></div> -->
-        <!-- <div class="index_text_box">
-          <h1>Velkommen til forårsblomster</h1>
-        </div> -->
       </div>
     </main>
     <footer>
