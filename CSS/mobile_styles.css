@@ -1,10 +1,46 @@
 @media screen and (max-width: 860px) and (min-width: 300px) {
-  /* .index_img {
-    background-image: url("/Images/photos/H/7_foraersblomster_Martin_Kleisberg.webp");
-    height: 100%;
+  /* .header_menu {
+    display: none;
+  }
+
+  .mobilmenu {
+    display: block;
+  }
+
+  .header_menu.active {
+    display: block;
+  }
+
+  .mobilmenu.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+  .mobilmenu.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+  .mobilmenu.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  .header_menu.active .menu {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 110px;
+    left: 0;
     width: 100%;
-    overflow: auto;
-    position: fixed;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .header_menu.active .menu li {
+    margin: 10px 20px;
+  }
+
+  .header_menu.active .menu a {
+    font-size: 24px;
   } */
 
   .top_section_text {

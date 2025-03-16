@@ -8,15 +8,6 @@
     margin: 0 auto;
   }
 
-  /* .text_r p {
-    padding-left: 10px;
-  }
-
-  .text_l,
-  h2 p {
-    padding-right: 10px;
-  } */
-
   .img_info_r {
     grid-row: 1/2;
   }
@@ -33,7 +24,9 @@
     padding-top: 16px;
   }
 
-  .ul_r {
-    /* margin-left: 10px; */
+  .plant_section_grund_tip {
+    position: relative;
+    left: 70%;
+    width: 280px;
   }
 }
