@@ -24,13 +24,11 @@
     width: auto;
   }
 
+  .text_l h2,
+  .text_l p,
+  .text_r h2,
   .text_r p {
     padding-left: 5px;
-  }
-
-  .text_l,
-  h2 p {
-    padding-right: 5px;
   }
 }
 

@@ -157,7 +157,7 @@ h2 {
 
 .text_r h2 {
   text-align: center;
-  padding-left: 10px;
+  /* padding-left: 10px; */
 }
 
 .info_div_ul {
@@ -214,7 +214,7 @@ h2 {
 }
 
 .img_info {
-  height: 780px;
+  max-height: 780px;
 }
 
 .media {
@@ -223,8 +223,6 @@ h2 {
 
 .plant_section_grund {
   max-width: 800px;
-  /* position: relative;
-  left: 30%; */
   padding: 4px;
   margin: 0 auto;
 }
@@ -236,8 +234,6 @@ h2 {
 
 .plant_section_grund_with_img img {
   width: 600px;
-  /* position: relative;
-  left: 6%; */
   padding: 1em;
   margin: 0 auto;
 }
@@ -258,14 +254,6 @@ h2 {
   left: 60%;
   width: 320px;
 }
-
-/* .border_bottom {
-  border-bottom: #000 2px solid;
-  padding: 4px;
-  width: 900px;
-  position: relative;
-  left: 28%;
-} */
 
 .footer_box {
   height: 40px;

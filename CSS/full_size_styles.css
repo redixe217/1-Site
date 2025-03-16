@@ -3,20 +3,19 @@
   .section_l {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1000px;
-    padding-top: 2em;
+    max-width: 1300px;
+    padding-top: 1em;
     margin: 0 auto;
-    place-items: center;
   }
 
-  .text_r p {
+  /* .text_r p {
     padding-left: 10px;
   }
 
   .text_l,
   h2 p {
     padding-right: 10px;
-  }
+  } */
 
   .img_info_r {
     grid-row: 1/2;
@@ -35,7 +34,6 @@
   }
 
   .ul_r {
-    position: relative;
-    left: 10px;
+    /* margin-left: 10px; */
   }
 }
