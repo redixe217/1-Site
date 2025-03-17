@@ -1,13 +1,9 @@
 @media screen and (max-width: 860px) and (min-width: 300px) {
-  /* .header_menu {
+  .menu {
     display: none;
   }
 
   .mobilmenu {
-    display: block;
-  }
-
-  .header_menu.active {
     display: block;
   }
 
@@ -24,24 +20,14 @@
     transition: 0.2s linear;
   }
 
-  .header_menu.active .menu {
-    display: block;
-    background-color: #ffffff;
-    position: absolute;
-    top: 110px;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    z-index: 999;
+  nav li {
+    padding: 12px 0 12px 0;
+    text-align: center;
   }
 
-  .header_menu.active .menu li {
+  .nav.active .menu {
     margin: 10px 20px;
   }
-
-  .header_menu.active .menu a {
-    font-size: 24px;
-  } */
 
   .top_section_text {
     height: 60px;
@@ -75,5 +61,6 @@
 
   .index_video_mobil {
     display: block;
+    padding-top: 20px;
   }
 }

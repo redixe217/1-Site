@@ -1,3 +1,5 @@
+/* Gamle font stiles */
+
 @font-face {
   font-family: "roboto_regular";
   src: url(../fonts/Roboto-Regular.ttf);
@@ -18,308 +20,90 @@
   src: url(../fonts/Roboto-ExtraLight.ttf);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-  display: block;
-}
-
-h1 {
+h1,
+h2,
+h4 {
   font-family: "roboto_regular";
   overflow-wrap: break-word;
-  font-size: 60px;
 }
 
-h2 {
-  font-family: "roboto_regular";
-  overflow-wrap: break-word;
-  font-size: 24px;
-}
-
-h3 {
-  font-family: "roboto_Ligh";
-  overflow-wrap: break-word;
-  font-size: 20px;
-}
-
+h3,
 p {
   font-family: "roboto_Ligh";
   overflow-wrap: break-word;
-  font-size: 16px;
+}
+
+ul {
+  font-family: "roboto_Ligh";
+  list-style: none;
+}
+
+@media (width <= 800px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  ul {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  ul {
+    font-size: 14px;
+  }
 }
 
 header {
-  height: 110px;
-  width: 100%;
-  display: flex;
-  padding: 0 20px;
-  color: #000;
-  background-color: #518f59;
-  align-items: center;
-  justify-content: space-between;
   font-family: "roboto_Ligh";
   font-size: 16px;
 }
 
-.header_menu {
-  display: flex;
-  gap: 20px;
+.info_menu a {
+  font-family: "roboto_Ligh";
+  font-size: 18px;
 }
 
-.logo_img {
-  height: 100px;
-  width: auto;
+footer {
+  font-family: "roboto_extralight";
 }
 
-.nav_a {
-  padding: 8px 8px 2px 8px;
-  margin-right: 20px;
-  color: #000;
-  float: right;
-  text-decoration: none;
-}
-
-.nav_a:hover {
-  border-bottom: solid #000 1px;
-}
-
-.index_div {
-  height: calc(100vh - 111px - 60px);
-  overflow: hidden;
-}
-
-.index_text_box {
-  height: 80px;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-}
-
-.index_text_box h1 {
-  width: 100%;
-  position: absolute;
-  backdrop-filter: blur(208px) saturate(70%);
-  -webkit-backdrop-filter: blur(208px) saturate(70%);
-  transform: translate(-50%, -50%);
-}
-
-.index_img {
-  /* background-image: url("/Images/photos/L/7_foraersblomster_Martin_Kleisberg.webp"); */
-  /* height: 100%; 
-    width: 100%;
-    overflow: auto;
-    position: fixed;
-    place-self: stretch;
-    object-fit: cover; */
-  height: 100%;
-  width: 100%;
-  display: block;
-  padding-top: 20px;
-  position: static;
-  object-fit: cover;
-}
-
-.top_section_o {
-  position: relative;
-  overflow: hidden;
-}
-
-.top_section_img {
-  height: 260px;
-  width: 100%;
-  display: block;
-  object-fit: cover;
-  /* overflow: auto; */
-  /* position: fixed; */
-  /* place-self: stretch; */
-}
-
-.top_section_text {
-  height: 80px;
-  width: 100%;
-  top: 22%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  background-color: rgba(128, 128, 128, 0.3);
-  padding: 0.5dm 1em;
-  backdrop-filter: blur(6px) saturate(70%);
-  -webkit-backdrop-filter: blur(6px) saturate(70%);
-  text-align: center;
-}
-
-.media {
-  position: relative; /* Gør det muligt at positionere overlayen i forhold til billedet */
-  display: inline-block; /* Eller block – alt efter din layout */
-}
-
-/* Billedet – gør det responsivt */
-.img_info_l,
-.img_info_r {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-/* Overlay-boksen */
-.info_div_ul {
-  position: absolute;
-  bottom: 0; /* Starter ved bunden af .media */
-  left: 0;
-  right: 0;
-  transform: translateY(
-    50%
-  ); /* Flytter overlayen ned, så halvdelen ligger over billedet og halvdelen under */
-  background: rgba(255, 255, 255, 0.8); /* Eksempel: let transparent baggrund */
-  padding: 0.5em;
-  box-sizing: border-box;
-}
-
-.section_r,
-.section_l {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(5, 5fr); */
-}
-
-.text_r {
-  grid-row: 2/1;
-}
-
-.img_info_r {
-  grid-row: 1/2;
-}
-
-.text_l {
-  grid-row: 1/2;
-}
-
-.img_info_l {
-  grid-row: 2/1;
-}
-
----- .flowertime_li,
-.water_li,
-.ligth_li,
-.frost_li {
-  display: inline-flex;
-  align-items: center;
-  white-space: nowrap;
-}
-
-.flowertime_li::before,
-.water_li::before,
-.ligth_li::before,
-.frost_li::before {
-  content: "";
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  margin-right: 8px;
-  background-size: 40px 40px;
-}
-
-.flowertime_li::before {
-  background: url("/Images/Icons/icons8-calendar-96.png") no-repeat center
-    center;
-}
-
-.water_li::before {
-  background: url("/Images/Icons/icons8-water-96.png") no-repeat center center;
-}
-
-.ligth_li::before {
-  background: url("/Images/Icons/icons8-sun-96.png") no-repeat center center;
-}
-
-.frost_li::before {
-  background: url("/Images/Icons/icons8-thermometer-96.png") no-repeat center
-    center;
-}
-
--------- .info_div_ul ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.info_div_ul li {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-}
-
-.info_div_ul li::before {
-  content: "";
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  margin-right: 8px;
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-}
-
-.flowertime_li::before {
-  background: url("/Images/Icons/icons8-calendar-96.png") no-repeat center
-    center;
-}
-
-.water_li::before {
-  background: url("/Images/Icons/icons8-water-96.png") no-repeat center center;
-}
-
-.ligth_li::before {
-  background: url("/Images/Icons/icons8-sun-96.png") no-repeat center center;
-}
-
-.frost_li::before {
-  background: url("/Images/Icons/icons8-thermometer-96.png") no-repeat center
-    center;
-}
-
-@media (width <= 800px) {
-}
-
-@media (min-width: 800px) {
-  .section_r,
-  .section_l {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 1000px;
-    position: relative;
-    left: 25%;
-    padding-top: 4em;
-  }
-
-  .text_r p {
-    padding-left: 10px;
-  }
-
-  .text_l h2 {
-    text-align: center;
-  }
-
-  .text_r h2 {
-    text-align: center;
-  }
-
-  .text_l,
-  h2 p {
-    padding-right: 10px;
-  }
-
-  .img_info_r {
-    grid-row: 1/2;
-  }
-
-  .text_l {
-    grid-row: 1/2;
-  }
+nav.active .menu a {
+  font-size: 24px;
 }

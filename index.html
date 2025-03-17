@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
     <link rel="stylesheet" href="CSS/styles.css" />
     <link rel="stylesheet" href="CSS/generel.css" />
     <link rel="stylesheet" href="CSS/full_size_styles.css" />
@@ -12,18 +13,23 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="images/logo.webp" class="logo_img" /></a>
-
-      <nav class="header_menu">
-        <div class="menu">
-          <a href="index.html" class="nav_a">Forside</a>
-          <a href="foraaret-folder-sig-ud.html" class="nav_a"
-            >Foråret folder sig ud</a
-          >
-          <a href="fra-loeg-til-blomst.html" class="nav_a"
-            >Fra løg til blomst</a
-          >
-        </div>
+      <a href="index.html"
+        ><img src="images/logo.webp" class="logo_img" alt="logo"
+      /></a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html" class="nav_a">Forside</a></li>
+          <li>
+            <a href="foraaret-folder-sig-ud.html" class="nav_a"
+              >Foråret folder sig ud</a
+            >
+          </li>
+          <li>
+            <a href="fra-loeg-til-blomst.html" class="nav_a"
+              >Fra løg til blomst</a
+            >
+          </li>
+        </ul>
         <div class="mobilmenu">
           <div class="line"></div>
           <div class="line"></div>
@@ -39,12 +45,9 @@
           loop
           playsinline
           class="index_video_full video_style"
+          poster="video/poster/poster_full.png"
         >
-          <source
-            src="video/bee_at_the_flower.mp4"
-            poster="video/poster/poster_full.png"
-            type="video/mp4"
-          />
+          <source src="video/bee_at_the_flower.mp4" type="video/mp4" />
           Din browser understøtter ikke videoafspilning.
         </video>
         <video
@@ -53,12 +56,9 @@
           loop
           playsinline
           class="index_video_mobil video_style"
+          poster="video/poster/poster_mobil.png"
         >
-          <source
-            src="video/bee_at_the_flower_mobil.mp4"
-            poster="video/poster/poster_mobil.png"
-            type="video/mp4"
-          />
+          <source src="video/bee_at_the_flower_mobil.mp4" type="video/mp4" />
           Din browser understøtter ikke videoafspilning.
         </video>
       </div>

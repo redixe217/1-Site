@@ -34,11 +34,20 @@ img {
   display: block;
 }
 
+header {
+  font-family: "roboto_Ligh";
+  font-size: 20px;
+}
+
 h1,
 h2,
 h4 {
   font-family: "roboto_regular";
   overflow-wrap: break-word;
+}
+
+h4 {
+  font-weight: normal;
 }
 
 h3,
@@ -54,13 +63,26 @@ ul {
   padding: 0;
 }
 
-a:hover {
+.info_menu a {
+  font-family: "roboto_Ligh";
+  /* font-size: 18px; */
+}
+
+nav.active .menu a {
+  /* font-size: 24px; */
+}
+
+footer {
+  font-family: "roboto_extralight";
+}
+
+.menu a:hover {
   border-bottom: solid #000 1px;
 }
 
 @media (width <= 800px) {
   h1 {
-    font-size: 25px;
+    font-size: 26px;
   }
 
   h2 {
@@ -68,25 +90,25 @@ a:hover {
   }
 
   h3 {
-    font-size: 20px;
+    /* font-size: 18px; */
   }
 
   h4 {
-    font-size: 16px;
+    /* font-size: 16px; */
   }
 
   p {
-    font-size: 15px;
+    /* font-size: 15px; */
   }
 
-  ul {
+  .info_div_ul ul {
     font-size: 14px;
   }
 }
 
 @media (min-width: 800px) {
   h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   h2 {
@@ -106,6 +128,10 @@ a:hover {
   }
 
   ul {
-    font-size: 14px;
+    /* font-size: 14px; */
+  }
+
+  .plant_section_grund_tip p {
+    font-size: 15px;
   }
 }

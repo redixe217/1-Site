@@ -24,6 +24,11 @@ li {
   padding: 6px 0 6px 0;
 }
 
+.logo_img {
+  height: 100px;
+  width: 260px;
+}
+
 header {
   height: 110px;
   width: 100%;
@@ -34,25 +39,23 @@ header {
   background-color: #518f59;
   align-items: center;
   justify-content: space-between;
-  font-family: "roboto_Ligh";
-  font-size: 16px;
+  z-index: 9999;
 }
 
-.header_menu {
+.menu {
   display: flex;
   gap: 20px;
 }
 
-.logo_img {
-  height: 100px;
-  width: auto;
+nav {
+  display: flex;
+  align-items: center;
 }
 
 .nav_a {
   padding: 8px 8px 2px 8px;
   margin-right: 20px;
   color: #000;
-  float: right;
   text-decoration: none;
   border-bottom: solid #518f59 1px;
 }
@@ -73,6 +76,35 @@ header {
 
 .mobilmenu {
   display: none;
+}
+
+nav.active .menu {
+  height: 1200px;
+  width: 100%;
+  display: block;
+  background-color: #518f59;
+  position: absolute;
+  top: 94px;
+  left: 0;
+  width: 100%;
+}
+
+nav.active .menu {
+  margin-top: 14px;
+}
+
+.mobilmenu {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.mobilmenu .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
 }
 
 .video_style {
@@ -111,9 +143,8 @@ header {
   transform: translate(-50%, -50%);
   color: #fff;
   background-color: rgba(128, 128, 128, 0.3);
-  padding: 0.5dm 1em;
+  padding: 0.5em 1em;
   backdrop-filter: blur(6px) saturate(70%);
-  -webkit-backdrop-filter: blur(6px) saturate(70%);
   text-align: center;
 }
 
@@ -141,15 +172,13 @@ h2 {
 
 .info_menu img:hover {
   filter: grayscale(0%);
-  transform: all 0.8s;
+  transition: all 0.8s;
 }
 
 .info_menu a {
   color: #000;
   text-align: center;
   text-decoration: none;
-  font-family: "roboto_Ligh";
-  font-size: 18px;
   border-bottom: solid #fff 1px;
 }
 
@@ -220,20 +249,20 @@ h2 {
 }
 
 .flowertime_li::before {
-  background: url("/Images/Icons/icons8-calendar-96.png") no-repeat center
+  background: url("../images/icons/icons8-calendar-96.png") no-repeat center
     center;
 }
 
 .water_li::before {
-  background: url("/Images/Icons/icons8-water-96.png") no-repeat center center;
+  background: url("../images/icons/icons8-water-96.png") no-repeat center center;
 }
 
 .ligth_li::before {
-  background: url("/Images/Icons/icons8-sun-96.png") no-repeat center center;
+  background: url("../images/icons/icons8-sun-96.png") no-repeat center center;
 }
 
 .frost_li::before {
-  background: url("/Images/Icons/icons8-thermometer-96.png") no-repeat center
+  background: url("../images/icons/icons8-thermometer-96.png") no-repeat center
     center;
 }
 
@@ -268,6 +297,10 @@ h2 {
   margin: 0 auto;
 }
 
+.plant_section_grund_with_img h3 {
+  text-align: center;
+}
+
 .plant_section_grund h3 {
   text-align: center;
   padding-top: 1em;
@@ -287,7 +320,6 @@ h2 {
 .footer_p {
   height: 12px;
   margin-top: 20px;
-  font-family: "roboto_extralight";
   overflow-wrap: break-word;
   text-align: center;
 }
