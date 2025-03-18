@@ -30,7 +30,7 @@ li {
 }
 
 header {
-  height: 110px;
+  height: 100px;
   width: 100%;
   display: flex;
   position: sticky;
@@ -90,7 +90,7 @@ nav.active .menu {
 }
 
 nav.active .menu {
-  margin-top: 14px;
+  margin-top: 6px;
 }
 
 .mobilmenu {
@@ -165,9 +165,9 @@ h2 {
 }
 
 .info_menu img {
-  height: 220px;
-  width: 200px;
-  filter: grayscale(35%);
+  height: 180px;
+  width: 180px;
+  filter: grayscale(40%);
 }
 
 .info_menu img:hover {
@@ -236,7 +236,7 @@ h2 {
   align-items: center;
   white-space: nowrap;
   grid-column: 2;
-  padding: 0;
+  padding: 0 0 0 10px;
 }
 
 .info_div_ul li::before {
@@ -267,7 +267,7 @@ h2 {
 }
 
 .img_info {
-  max-height: 780px;
+  max-height: 812px;
 }
 
 .media {
@@ -280,25 +280,36 @@ h2 {
   margin: 0 auto;
 }
 
+.styles_tip_box {
+  max-width: 800px;
+}
+
 .plant_section_grund ul {
-  list-style-type: square;
+  list-style-type: inherit;
   padding-left: 24px;
 }
 
 .plant_section_grund_with_img img {
-  width: 600px;
-  padding: 1em;
   margin: 0 auto;
 }
 
 .plant_section_grund_with_img {
   max-width: 800px;
-  padding: 4px;
   margin: 0 auto;
 }
 
 .plant_section_grund_with_img h3 {
   text-align: center;
+}
+
+.log_img_full {
+  max-width: 800px;
+  display: block;
+}
+
+.log_img_mobil {
+  width: auto;
+  display: none;
 }
 
 .plant_section_grund h3 {

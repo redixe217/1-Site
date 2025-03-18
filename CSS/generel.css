@@ -65,11 +65,10 @@ ul {
 
 .info_menu a {
   font-family: "roboto_Ligh";
-  /* font-size: 18px; */
+  font-size: 18px;
 }
 
 nav.active .menu a {
-  /* font-size: 24px; */
 }
 
 footer {
@@ -82,23 +81,11 @@ footer {
 
 @media (width <= 800px) {
   h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   h2 {
     font-size: 20px;
-  }
-
-  h3 {
-    /* font-size: 18px; */
-  }
-
-  h4 {
-    /* font-size: 16px; */
-  }
-
-  p {
-    /* font-size: 15px; */
   }
 
   .info_div_ul ul {
@@ -125,10 +112,6 @@ footer {
 
   p {
     font-size: 16px;
-  }
-
-  ul {
-    /* font-size: 14px; */
   }
 
   .plant_section_grund_tip p {

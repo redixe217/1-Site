@@ -38,6 +38,10 @@
     padding-top: 4px;
   }
 
+  .top_section_img {
+    height: 180px;
+  }
+
   .info_menu {
     display: none;
   }
@@ -51,6 +55,19 @@
   .text_r h2,
   .text_r p {
     padding-left: 5px;
+  }
+
+  .log_img_full {
+    display: none;
+  }
+
+  .log_img_mobil {
+    display: block;
+  }
+
+  .plant_section_grund_with_img h3,
+  .plant_section_grund_with_img h4 {
+    padding: 8px;
   }
 }
 

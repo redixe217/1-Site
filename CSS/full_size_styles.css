@@ -3,7 +3,7 @@
   .section_l {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1300px;
+    max-width: 1000px;
     padding-top: 1em;
     margin: 0 auto;
   }
@@ -24,9 +24,36 @@
     padding-top: 16px;
   }
 
-  .plant_section_grund_tip {
+  .text_r {
+    padding-left: 10px;
+    text-align: justify;
+  }
+
+  .text_l {
+    padding-right: 10px;
+    text-align: justify;
+  }
+
+  .plant_section_grund {
+    text-align: justify;
+  }
+
+  .styles_tip_box {
     position: relative;
-    left: 70%;
-    width: 280px;
+    left: 60%;
+    width: 220px;
+  }
+
+  .plant_section_grund_tip {
+    text-align: justify;
+  }
+
+  .plant_section_grund_with_img {
+    padding: 4px;
+  }
+
+  .plant_section_grund_with_img img {
+    padding: 1em;
+    margin: 0 auto;
   }
 }
