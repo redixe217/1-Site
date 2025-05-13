@@ -16,6 +16,10 @@
     grid-row: 1/2;
   }
 
+  .img_info {
+    max-height: 812px;
+  }
+
   .info_div_ul {
     width: 490px;
     position: relative;
